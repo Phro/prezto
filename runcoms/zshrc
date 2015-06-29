@@ -11,3 +11,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:$PATH:/usr/games/bin/:.
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:$PATH
+# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH"
+
+export DISABLE_LS_COLORS="false"
+alias l='/usr/local/bin/gls --color=auto --group-directories-first'
+alias ls='/usr/local/bin/gls --color=auto --group-directories-first'
+alias make='make -j2'
+alias rot='/Users/jessefrohlich/codingProjects/macFlip/Resources/fb-rotate -d 0 -r'
+eval `gdircolors $HOME/.zsh_ls_colors/dircolors.ansi-dark`
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
