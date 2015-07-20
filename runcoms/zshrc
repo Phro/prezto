@@ -12,8 +12,10 @@ fi
 
 # Customize to your needs...
 
+# TeX, /usr/local/bin, and current directory
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:$PATH:/usr/games/bin/:.
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:$PATH # git...?
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" # GNU coreutils
 # export MANPATH="/usr/local/man:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH"
 
