@@ -13,17 +13,21 @@ fi
 # Customize to your needs...
 
 # TeX, /usr/local/bin, and current directory
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:$PATH:/usr/games/bin/:.
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:$PATH # git...?
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:$PATH:/usr/games/bin/
+export PATH=/usr/local/git/bin:$PATH:/opt/local/bin:/opt/local/sbin # Add git and other commands
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" # GNU coreutils
+PATH=$PATH:. # Add current directory last
+
+CDPATH=.:~ # Default to home if no directory found.
+
 # export MANPATH="/usr/local/man:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH"
 
-export DISABLE_LS_COLORS="false"
+#export DISABLE_LS_COLORS="false"
 alias l='ls --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'
-alias make='make -j2'
+#alias make='make -j2'
 #alias rot='/Users/jessefrohlich/codingProjects/macFlip/Resources/fb-rotate -d 0 -r'
-eval `dircolors $HOME/.dircolors/dircolors.ansi-light`
+#eval `dircolors $HOME/.dircolors/dircolors.ansi-light`
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
