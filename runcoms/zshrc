@@ -20,10 +20,10 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" # GNU coreutils
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH"
 
 export DISABLE_LS_COLORS="false"
-alias l='/usr/local/bin/gls --color=auto --group-directories-first'
-alias ls='/usr/local/bin/gls --color=auto --group-directories-first'
+alias l='ls --color=auto --group-directories-first'
+alias ls='ls --color=auto --group-directories-first'
 alias make='make -j2'
-alias rot='/Users/jessefrohlich/codingProjects/macFlip/Resources/fb-rotate -d 0 -r'
-eval `gdircolors $HOME/.zsh_ls_colors/dircolors.ansi-dark`
+#alias rot='/Users/jessefrohlich/codingProjects/macFlip/Resources/fb-rotate -d 0 -r'
+eval `dircolors $HOME/.dircolors/dircolors.ansi-light`
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
