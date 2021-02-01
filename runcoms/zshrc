@@ -24,9 +24,19 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH
 alias l='ls --color=auto --group-directories-first'
 alias ls='ls --color=auto --group-directories-first'
 alias t='date +%R'
-#alias see='mupdf -C FF9800' # Tap C to toggle color tinting.
-#alias see='mupdf'
+alias mutt='neomutt'
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+alias c='foo(){ cd "$1"; ls }; foo'
+alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
+alias dr='foo(){ local mypath=~/Dropbox/Frohlich/$(date +%Y-%m-%d)
+mkdir -p $mypath && cp -r "$1" $mypath }; foo'
+alias rd='foo(){ cp ~/Dropbox/Frohlich/"$1" .}; foo'
 #alias make='make -j2'
 #eval `dircolors ~/.dircolors/dircolors.ansi-dark`
 
+# Not quite what I want...
+fignore=(.o .aux .fls .log .pre .out .fdb_latekmk)
+
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+# Not quite what I want.
+# zstyle ':completion:*:*:e:*:*files' ignored-patterns '*.{pdf,aux,fls,log,pre,synctex*,fdb*}'
