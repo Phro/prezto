@@ -19,5 +19,11 @@ alias ls='ls --color=auto --group-directories-first'
 
 ## File-modifying utilities (TODO: consider vifm usage)
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
-alias c='foo(){ cd "$1"; ls }; foo'
+alias c='foo(){ if [[ ! -z $1 ]]
+then
+  cd "$1"
+else
+  cd
+fi; ls }; foo'
+
 alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
