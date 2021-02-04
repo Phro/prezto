@@ -6,8 +6,8 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME}/.config/zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.config/zprezto/init.zsh"
 fi
 
 # Customize to your needs...
@@ -19,11 +19,11 @@ alias ls='ls --color=auto --group-directories-first'
 
 ## File-modifying utilities (TODO: consider vifm usage)
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
-alias c='foo(){ if [[ ! -z $1 ]]
+alias c='cdls(){ if [[ ! -z $1 ]]
 then
   cd "$1"
 else
   cd
-fi; ls }; foo'
+fi; ls }; cdls'
 
 alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
