@@ -12,6 +12,11 @@ fi
 
 # Customize to your needs...
 
+cdpath=(
+  $cdpath
+  ~
+)
+
 # Aliases
 
 alias l='ls --color=auto --group-directories-first'
