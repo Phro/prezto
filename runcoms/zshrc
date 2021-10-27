@@ -32,3 +32,9 @@ else
 fi; ls }; cdls'
 
 alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
+
+alias mutt='neomutt'
+alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
+alias dr='foo(){ local mypath=~/Dropbox/Frohlich/$(date +%Y-%m-%d)
+mkdir -p $mypath && cp -r "$1" $mypath }; foo'
+alias rd='foo(){ cp ~/Dropbox/Frohlich/"$1" .}; foo'
