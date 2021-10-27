@@ -11,3 +11,32 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# /usr/local/bin, and current directory
+export PATH=$PATH:$HOME/.local/bin:.
+
+CDPATH=.:~ # Default to home if no directory found.
+
+# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:/usr/games/man/:$MANPATH"
+
+#export DISABLE_LS_COLORS="false"
+alias l='ls --color=auto --group-directories-first'
+alias ls='ls --color=auto --group-directories-first'
+alias t='date +%R'
+alias mutt='neomutt'
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+alias c='foo(){ cd "$1"; ls }; foo'
+alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
+alias dr='foo(){ local mypath=~/Dropbox/Frohlich/$(date +%Y-%m-%d)
+mkdir -p $mypath && cp -r "$1" $mypath }; foo'
+alias rd='foo(){ cp ~/Dropbox/Frohlich/"$1" .}; foo'
+#alias make='make -j2'
+#eval `dircolors ~/.dircolors/dircolors.ansi-dark`
+
+# Not quite what I want...
+fignore=(.o .aux .fls .log .pre .out .fdb_latekmk)
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+# Not quite what I want.
+# zstyle ':completion:*:*:e:*:*files' ignored-patterns '*.{pdf,aux,fls,log,pre,synctex*,fdb*}'
