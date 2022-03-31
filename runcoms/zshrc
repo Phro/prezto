@@ -29,7 +29,7 @@ then
   cd "$1"
 else
   cd
-fi; ls }; cdls'
+fi; ls -t }; cdls'
 
 alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
 
@@ -38,3 +38,4 @@ alias cpe='foo(){ cp "$1" "$2"; e "$2" }; foo'
 alias dr='foo(){ local mypath=~/Dropbox/Frohlich/$(date +%Y-%m-%d)
 mkdir -p $mypath && cp -r "$1" $mypath }; foo'
 alias rd='foo(){ cp ~/Dropbox/Frohlich/"$1" .}; foo'
+alias ff='fixfirefox(){rm -f ~/.mozilla/firefox/*.default-release/{.,}*lock*}; fixfirefox'
