@@ -39,3 +39,4 @@ alias dr='foo(){ local mypath=~/Dropbox/Frohlich/$(date +%Y-%m-%d)
 mkdir -p $mypath && cp -r "$1" $mypath }; foo'
 alias rd='foo(){ cp ~/Dropbox/Frohlich/"$1" .}; foo'
 alias ff='fixfirefox(){rm -f ~/.mozilla/firefox/*.default-release/{.,}*lock*}; fixfirefox'
+eval "$(dircolors ${ZDOTDIR:-$HOME}/.config/zprezto/dircolors.ansi-dark)"
