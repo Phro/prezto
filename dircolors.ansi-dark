@@ -272,15 +272,21 @@ EXEC 01;31  # Unix
 .zsh    32
 
 # Data Serialization & Markup
+.css    36
 .csv    36
+.dhall  36
 .htm    36
 .html   36
-.yaml   36
 .json   36
-.xml    36
 .shtml  36
-.dhall  36
-.css    36
+.xml    36
+.yaml   36
+
+# Configuration
+.conf   36
+.ini    36
+*rc     36
+*config 36
 
 ### Multimedia formats
 
@@ -465,6 +471,7 @@ EXEC 01;31  # Unix
 # Unimportant files
 .bak            38;5;11
 .old            38;5;11
+.backup         38;5;11
 
 # The brightmagenta (Solarized: purple) color is free for you to use for your
 # custom file type
