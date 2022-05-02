@@ -283,10 +283,11 @@ EXEC 01;31  # Unix
 .yaml   36
 
 # Configuration
+*config 36
+*rc     36
+.cabal  36
 .conf   36
 .ini    36
-*rc     36
-*config 36
 
 ### Multimedia formats
 
@@ -446,6 +447,7 @@ EXEC 01;31  # Unix
 
 # Unimportant text files
 *#              02;38;5;12
+.lock           02;38;5;12
 .log            02;38;5;12
 
 # Unimportant non-text files
