@@ -109,13 +109,14 @@ TERM tmux
 TERM tmux-256color
 TERM vt100
 TERM xterm
-TERM xterm-new
 TERM xterm-16color
 TERM xterm-256color
 TERM xterm-256color-italic
 TERM xterm-88color
 TERM xterm-color
 TERM xterm-debian
+TERM xterm-kitty
+TERM xterm-new
 TERM xterm-termite
 
 # EIGHTBIT, followed by '1' for on, '0' for off. (8-bit output)
