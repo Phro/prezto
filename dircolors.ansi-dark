@@ -396,6 +396,12 @@ EXEC 01;31  # Unix
 .xlsx 38;5;9
 .xopp 38;5;9
 
+# Binary file formats
+
+## Fonts
+.sfd  38;5;9
+.ttc  38;5;9
+
 # Archives, compressed
 .7z   38;5;13
 .Z    38;5;13
