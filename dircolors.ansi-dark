@@ -207,10 +207,12 @@ EXEC 01;31  # Unix
 ### Text formats
 
 # Text that we can edit with a regular editor
-.md     1;32
-.mkd    1;32
-.org    1;32
-.txt    1;32
+.md      1;32
+.mkd     1;32
+.org     1;32
+.txt     1;32
+*LICENSE 1;32
+*README  1;32
 
 # Source text
 .0      32
@@ -411,7 +413,7 @@ EXEC 01;31  # Unix
 .bz   38;5;13
 .bz2  38;5;13
 .cab  38;5;13  # Win
-.deb  38;;13
+.deb  38;5;13
 .dmg  38;5;13  # OSX
 .gem  38;5;13
 .gz   38;5;13
@@ -430,6 +432,7 @@ EXEC 01;31  # Unix
 .xz   38;5;13
 .z    38;5;13
 .zip  38;5;13
+.zst  38;5;13
 
 # For testing
 .ANSI-30-black 30
@@ -477,6 +480,7 @@ EXEC 01;31  # Unix
 .pre            02;38;5;11
 .swo            02;38;5;11
 .swp            02;38;5;11
+.sig            02;38;5;11
 
 # Unimportant files
 .bak            38;5;11
