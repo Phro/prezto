@@ -48,6 +48,7 @@ path=(
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
   $path
+  $HOME/.local/bin
   .
 )
 
