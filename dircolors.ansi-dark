@@ -228,6 +228,7 @@ EXEC 01;31  # Unix
 .C      32
 .asy    32
 .bash   32
+.bib    32
 .c      32
 .cc     32
 .cl     32
@@ -457,8 +458,12 @@ EXEC 01;31  # Unix
 
 # Unimportant text files
 *#              02;38;5;12
+.bbl            02;38;5;12
+.bcf            02;38;5;12
+.blg            02;38;5;12
 .lock           02;38;5;12
 .log            02;38;5;12
+.toc            02;38;5;12
 
 # Unimportant non-text files
 *,v             02;38;5;11
