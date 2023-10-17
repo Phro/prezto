@@ -17,6 +17,19 @@ cdpath=(
   ~
 )
 
+path=(
+  $HOME/.cabal/bin
+  $HOME/.ghcup/bin
+  $HOME/{,s}bin(N)
+  /opt/{homebrew,local}/{,s}bin(N)
+  /usr/local/{,s}bin(N)
+  $path
+  $HOME/.local/bin
+  .
+)
+
+typeset -gU cdpath fpath mailpath path
+
 # Aliases
 
 alias l='ls --color=auto --group-directories-first'
